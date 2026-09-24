@@ -1,23 +1,51 @@
 aid: alefedge
+
 name: Alefedge
-description: 'Alefedge is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Alefedge is a technology company focused on delivering edge computing solutions that enable low-latency, high-performance applications across distributed networks. The firm provides a platform that integrates edge infrastructure, orchestration tools, and developer APIs to simplify the deployment of edge workloads. Alefedge aims to empower developers and enterprises to build real-time services such as IoT analytics, AR/VR streaming, and autonomous vehicle communication by bringing compute closer to the data source. The company is positioned in the emerging edge computing market, targeting use cases that require rapid data processing at the network edge.'
+
 url: https://raw.githubusercontent.com/api-evangelist/alefedge/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Edge-Computing
+- Platform
+- API
+- IoT
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/alefedge-hosts.yml
+- type: Vendors
+  url: vendors/alefedge-vendors.yml
+- type: DomainSecurity
+  url: security/alefedge-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/alefedge
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
